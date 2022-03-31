@@ -2,7 +2,7 @@
 
 git clone https://github.com/frmtn/rapid-openvpn.git
 
-cd rapid-openvpn/
+cd rapid-openvpn && mkdir client_configs
 
 make genconfig host=YOUR_SERVER_IP
 
