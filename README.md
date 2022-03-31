@@ -12,4 +12,4 @@ make new username=YOUR_USER
 
 make up
 
-Копируем example.ovpn из client_configs/example.ovpn к себе в OpenVPN-клиент и пользуемся
+Копируем YOUR_USER.ovpn из client_configs/YOUR_USER.ovpn к себе в OpenVPN-клиент и пользуемся
