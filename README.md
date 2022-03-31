@@ -2,13 +2,13 @@
 
 git clone https://github.com/frmtn/rapid-openvpn.git
 
-cd docker-compose-openvpn/
+cd rapid-openvpn/
 
-make genconfig host=vpn.example.com
+make genconfig host=YOUR_SERVER_IP
 
 make initpki
 
-make new username=example
+make new username=YOUR_USER
 
 make up
 
