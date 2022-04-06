@@ -14,18 +14,18 @@
 Сервер будет запущен. Далее копируем YOUR_USER.ovpn из client_configs/YOUR_USER.ovpn к себе в OpenVPN-клиент и пользуемся. 
 
 
-* Добавление нового пользователя:
+## Добавление нового пользователя:
 make new username=YOUR_USER_2
 Будет сгенирирован файл YOUR_USER_2.ovpn client_configs/YOUR_USER_2.ovpn
 
-* Отзыв доступа к клиента:
+## Отзыв доступа к клиента:
 make revoke username=YOUR_USER
 
-* Запуск VPN сервера
+## Запуск VPN сервера
 make up
 
-* Остановка VPN сервера 
+## Остановка VPN сервера 
 make stop
 
-* Статус VPN сервера (контейнера)
+## Статус VPN сервера (контейнера)
 make ps
