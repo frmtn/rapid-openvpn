@@ -1,8 +1,10 @@
 # Чтобы развернуть OpenVPN сервер нужно выполнить:
 
-1. git clone https://github.com/frmtn/rapid-openvpn.git
+1. Копируем проект
+* git clone https://github.com/frmtn/rapid-openvpn.git
 
-2. cd rapid-openvpn && mkdir client_configs
+2. 
+*  cd rapid-openvpn && mkdir client_configs
 
 3. make genconfig host=YOUR_SERVER_IP
 
@@ -11,21 +13,23 @@
 5. make new username=YOUR_USER
 
 6. make up
-Сервер будет запущен. Далее копируем YOUR_USER.ovpn из client_configs/YOUR_USER.ovpn к себе в OpenVPN-клиент и пользуемся. 
+Сервер будет запущен. 
+
+Далее копируем YOUR_USER.ovpn из client_configs/YOUR_USER.ovpn к себе в OpenVPN-клиент и пользуемся. 
 
 
 ## Добавление нового пользователя:
-make new username=YOUR_USER_2
+* make new username=YOUR_USER_2
 Будет сгенирирован файл YOUR_USER_2.ovpn client_configs/YOUR_USER_2.ovpn
 
 ## Отзыв доступа к клиента:
-make revoke username=YOUR_USER
+* make revoke username=YOUR_USER
 
 ## Запуск VPN сервера
-make up
+* make up
 
 ## Остановка VPN сервера 
-make stop
+* make stop
 
 ## Статус VPN сервера (контейнера)
-make ps
+* make ps
