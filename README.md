@@ -1,4 +1,4 @@
-# Теперь для того чтобы развернуть OpenVPN достаточно на сервере выполнить:
+# Чтобы развернуть OpenVPN сервер нужно выполнить:
 
 1. git clone https://github.com/frmtn/rapid-openvpn.git
 
