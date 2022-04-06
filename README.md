@@ -3,20 +3,23 @@
 1. Копируем проект
 * git clone https://github.com/frmtn/rapid-openvpn.git
 
-2. 
+2. Создаем папку для конфигураций клинетов
 *  cd rapid-openvpn && mkdir client_configs
 
-3. make genconfig host=YOUR_SERVER_IP
+3. Генерируем конфигурацию сервера
+* make genconfig host=YOUR_SERVER_IP
 
-4. make initpki
+4. Генерация сертификатов (PKI инфраструктуры)
+* make initpki
 
-5. make new username=YOUR_USER
+5. Создание нового пользователя
+* make new username=YOUR_USER
 
-6. make up
-Сервер будет запущен. 
+6. Запуск сервера
+* make up
+
 
 Далее копируем YOUR_USER.ovpn из client_configs/YOUR_USER.ovpn к себе в OpenVPN-клиент и пользуемся. 
-
 
 ## Добавление нового пользователя:
 * make new username=YOUR_USER_2
